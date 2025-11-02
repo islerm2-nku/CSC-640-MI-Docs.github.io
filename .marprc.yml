@@ -1,0 +1,17 @@
+# Marp Configuration
+input: ["*.md"]
+output: .
+watch: true
+server: true
+theme: default
+pdf: true
+allowLocalFiles: true
+
+# Export settings
+exports:
+  html:
+    output: "./html/"
+  pdf: 
+    output: "./pdf/"
+  pptx:
+    output: "./pptx/"
