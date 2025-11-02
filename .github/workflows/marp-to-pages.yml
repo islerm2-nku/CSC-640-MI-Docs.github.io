@@ -21,40 +21,59 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Marp Build (requirements)
-      uses: docker://marpteam/marp-cli:v3.4.0
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
       with:
-        args: requirements.md --html --allow-local-files --output requirements.html
+        node-version: '18'
     
-    - name: Marp Build (tech-stack)
-      uses: docker://marpteam/marp-cli:v3.4.0
-      with:
-        args: tech-stack.md --html --allow-local-files --output tech-stack.html
+    - name: Install Marp CLI
+      run: |
+        npm install -g @marp-team/marp-cli@3.4.0
+        marp --version
         
-    - name: Marp Build (modular-code)
-      uses: docker://marpteam/marp-cli:v3.4.0
-      with:
-        args: modular-code.md --html --allow-local-files --output modular-code.html
+    - name: Debug - List markdown files
+      run: |
+        echo "Current directory:"
+        pwd
+        echo "Markdown files:"
+        find . -name "*.md" -type f
+        echo "File permissions:"
+        ls -la *.md
         
-    - name: Marp Build (testing)
-      uses: docker://marpteam/marp-cli:v3.4.0
-      with:
-        args: testing.md --html --allow-local-files --output testing.html
+    - name: Convert presentations one by one
+      run: |
+        # Convert presentations individually with full paths
+        echo "Converting index.md..."
+        npx @marp-team/marp-cli@3.4.0 --html --allow-local-files "./index.md" --output "./index.html"
         
-    - name: Marp Build (deployment)
-      uses: docker://marpteam/marp-cli:v3.4.0
-      with:
-        args: deployment.md --html --allow-local-files --output deployment.html
+        echo "Converting requirements.md..."
+        npx @marp-team/marp-cli@3.4.0 --html --allow-local-files "./requirements.md" --output "./requirements.html"
         
-    - name: Marp Build (additional-topics)
-      uses: docker://marpteam/marp-cli:v3.4.0
-      with:
-        args: additional-topics.md --html --allow-local-files --output additional-topics.html
+        echo "Converting tech-stack.md..."
+        npx @marp-team/marp-cli@3.4.0 --html --allow-local-files "./tech-stack.md" --output "./tech-stack.html"
         
-    - name: Marp Build (index - overview)
-      uses: docker://marpteam/marp-cli:v3.4.0
-      with:
-        args: index.md --html --allow-local-files --output index.html
+        echo "Converting modular-code.md..."
+        npx @marp-team/marp-cli@3.4.0 --html --allow-local-files "./modular-code.md" --output "./modular-code.html"
+        
+        echo "Converting testing.md..."
+        npx @marp-team/marp-cli@3.4.0 --html --allow-local-files "./testing.md" --output "./testing.html"
+        
+        echo "Converting deployment.md..."
+        npx @marp-team/marp-cli@3.4.0 --html --allow-local-files "./deployment.md" --output "./deployment.html"
+        
+        echo "Converting additional-topics.md..."
+        npx @marp-team/marp-cli@3.4.0 --html --allow-local-files "./additional-topics.md" --output "./additional-topics.html"
+        
+    - name: Verify HTML files created
+      run: |
+        echo "Generated HTML files:"
+        ls -la *.html
+        echo "Checking if files have content:"
+        for file in *.html; do
+          if [ -f "$file" ]; then
+            echo "$file: $(wc -l < "$file") lines"
+          fi
+        done
         
     - name: Create navigation page
       run: |
