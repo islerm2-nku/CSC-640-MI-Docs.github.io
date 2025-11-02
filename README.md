@@ -1,4 +1,4 @@
-# Software Quality Documentation# Software Quality Documentation# Software Quality Documentation
+# Software Quality Documentation
 
 
 
