@@ -36,14 +36,6 @@ Marp presentation slides covering essential software quality principles and best
 
 3. **[tech-stack.md](tech-stack.md)** - Right technology stack selection
 
-## 🚀 Quick Start
-
-4. **[modular-code.md](modular-code.md)** - Modular code design### Core Quality Principles
-
-### View Presentations Locally
-
-5. **[testing.md](testing.md)** - Comprehensive test coverage1. **[Well-Defined Stories & Clear Goals](requirements.md)** - Quality starts with understanding what you're building
-
 ## 📋 Files Overview
 
 ```
