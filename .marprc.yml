@@ -1,7 +1,0 @@
-# Marp Configuration
-inputDir: .
-output: .
-html: true
-allowLocalFiles: true
-watch: false
-server: false

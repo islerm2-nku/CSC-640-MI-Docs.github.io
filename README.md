@@ -1,66 +1,198 @@
-# Software Quality Documentation
+# Software Quality Documentation# Software Quality Documentation# Software Quality Documentation
 
-A comprehensive guide to software quality principles and best practices for CSC-640, created as **Marp presentation slides**.
 
-## � Overview
 
-This documentation is structured as a series of **Marp presentations** covering essential software quality principles. Each topic is designed as an interactive slide deck for teaching and reference.
+Marp presentation slides covering essential software quality principles and best practices for CSC-640.
 
-## 📚 Presentation Topics
+
+
+## 🌐 View OnlineMarp presentation slides covering essential software quality principles and best practices for CSC-640.A comprehensive guide to software quality principles and best practices for CSC-640, created as **Marp presentation slides**.
+
+
+
+**📖 Live Documentation:** https://islerm2-nku.github.io/CSC-640-MI-Docs.github.io
+
+
+
+## 📚 Presentations## 📚 Presentations## � Overview
+
+
 
 ### Core Quality Principles
-1. **[Well-Defined Stories & Clear Goals](requirements.md)** - Quality starts with understanding what you're building
-2. **[Right Technology Stack Selection](tech-stack.md)** - Choosing appropriate tools and frameworks
-3. **[Modular Code Design](modular-code.md)** - Building reusable, maintainable components
-4. **[Comprehensive Test Coverage](testing.md)** - Ensuring reliability through testing
-5. **[Deploy Early & Often](deployment.md)** - Continuous integration and deployment practices
 
-### Additional Quality Practices
+1. **[index.md](index.md)** - Complete overview of all principles
+
+2. **[requirements.md](requirements.md)** - Well-defined stories & clear goals### Core Quality PrinciplesThis documentation is structured as a series of **Marp presentations** covering essential software quality principles. Each topic is designed as an interactive slide deck for teaching and reference.
+
+3. **[tech-stack.md](tech-stack.md)** - Right technology stack selection
+
+4. **[modular-code.md](modular-code.md)** - Modular code design1. **[index.md](index.md)** - Complete overview of all principles
+
+5. **[testing.md](testing.md)** - Comprehensive test coverage
+
+6. **[deployment.md](deployment.md)** - Deploy early & often2. **[requirements.md](requirements.md)** - Well-defined stories & clear goals## 📚 Presentation Topics
+
+7. **[additional-topics.md](additional-topics.md)** - Code review, security, monitoring & more
+
+3. **[tech-stack.md](tech-stack.md)** - Right technology stack selection
+
+## 🚀 Quick Start
+
+4. **[modular-code.md](modular-code.md)** - Modular code design### Core Quality Principles
+
+### View Presentations Locally
+
+5. **[testing.md](testing.md)** - Comprehensive test coverage1. **[Well-Defined Stories & Clear Goals](requirements.md)** - Quality starts with understanding what you're building
+
+1. **Install Marp CLI:**
+
+   ```bash6. **[deployment.md](deployment.md)** - Deploy early & often2. **[Right Technology Stack Selection](tech-stack.md)** - Choosing appropriate tools and frameworks
+
+   npm install -g @marp-team/marp-cli
+
+   ```7. **[additional-topics.md](additional-topics.md)** - Code review, security, monitoring & more3. **[Modular Code Design](modular-code.md)** - Building reusable, maintainable components
+
+
+
+2. **Preview a presentation:**4. **[Comprehensive Test Coverage](testing.md)** - Ensuring reliability through testing
+
+   ```bash
+
+   marp index.md --preview## 🚀 Quick Start5. **[Deploy Early & Often](deployment.md)** - Continuous integration and deployment practices
+
+   marp requirements.md --preview
+
+   marp testing.md --preview
+
+   ```
+
+### View Presentations Locally### Additional Quality Practices
+
+### VS Code (Recommended)
+
 6. **[Additional Quality Topics](additional-topics.md)** - Code review, documentation, monitoring, security, and performance
 
-### Main Overview
-- **[Complete Overview](index.md)** - All principles in one presentation
+Install the **[Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)** extension for built-in preview and editing.
 
-## 🎬 Using Marp
+1. **Install Marp CLI:**
 
-### Prerequisites
-Install Marp CLI:
+## 📤 Export Presentations
+
+   ```bash### Main Overview
+
+### To HTML:
+
+```bash   npm install -g @marp-team/marp-cli- **[Complete Overview](index.md)** - All principles in one presentation
+
+marp index.md -o index.html
+
+```   ```
+
+
+
+### To PDF:## 🎬 Using Marp
+
 ```bash
-npm install -g @marp-team/marp-cli
+
+marp index.md -o index.pdf2. **Preview a presentation:**
+
 ```
 
-### Viewing Presentations
+   ```bash### Prerequisites
 
-#### Preview in Browser:
+### To PowerPoint:
+
+```bash   marp index.md --previewInstall Marp CLI:
+
+marp index.md -o index.pptx
+
+```   marp requirements.md --preview```bash
+
+
+
+## 📖 About   marp testing.md --previewnpm install -g @marp-team/marp-cli
+
+
+
+Each presentation includes:   ``````
+
+- Core concepts and principles
+
+- Real-world examples and code samples
+
+- Best practices and implementation guides
+
+- Common pitfalls to avoid### VS Code (Recommended)### Viewing Presentations
+
+- Practical checklists
+
+
+
+---
+
+Install the **[Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)** extension for built-in preview and editing.#### Preview in Browser:
+
+**Course:** CSC-640 Software Quality
+
 ```bash
-# Individual presentations
+
+## 📤 Export Presentations# Individual presentations
+
 marp requirements.md --preview
-marp tech-stack.md --preview
-marp modular-code.md --preview
-marp testing.md --preview
-marp deployment.md --preview
+
+### To HTML:marp tech-stack.md --preview
+
+```bashmarp modular-code.md --preview
+
+marp index.md -o index.htmlmarp testing.md --preview
+
+```marp deployment.md --preview
+
 marp additional-topics.md --preview
 
-# Main overview
-marp index.md --preview
-```
+### To PDF:
 
-#### Export to HTML:
-```bash
-# Export individual presentations
-marp requirements.md -o requirements.html
+```bash# Main overview
+
+marp index.md -o index.pdfmarp index.md --preview
+
+``````
+
+
+
+### To PowerPoint:#### Export to HTML:
+
+```bash```bash
+
+marp index.md -o index.pptx# Export individual presentations
+
+```marp requirements.md -o requirements.html
+
 marp tech-stack.md -o tech-stack.html
-marp testing.md -o testing.html
 
-# Export all presentations
-marp *.md
-```
+## 📖 Aboutmarp testing.md -o testing.html
 
-#### Export to PDF:
-```bash
+
+
+Each presentation includes:# Export all presentations
+
+- Core concepts and principlesmarp *.md
+
+- Real-world examples and code samples```
+
+- Best practices and implementation guides
+
+- Common pitfalls to avoid#### Export to PDF:
+
+- Practical checklists```bash
+
 # Individual PDFs
-marp requirements.md -o requirements.pdf
+
+---marp requirements.md -o requirements.pdf
+
 marp testing.md -o testing.pdf
+
+**Course:** CSC-640 Software Quality
 
 # All presentations to PDF
 marp *.md --pdf

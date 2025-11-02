@@ -1,0 +1,20 @@
+# Marp exports
+*.html
+*.pdf
+*.pptx
+
+# Node modules
+node_modules/
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build/dist
+dist/
+build/
