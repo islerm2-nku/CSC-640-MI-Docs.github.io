@@ -26,19 +26,20 @@ This presentation covers essential principles that lead to maintainable, reliabl
 
 ---
 
-## The 5 Core Quality Principles
+## The Core Quality Principles
 
-1. **Well-Defined Stories & Clear Goals**
-2. **Right Tech Stack Selection**
-3. **Modular Code Design**
-4. **Comprehensive Test Coverage**
-5. **Deploy Early & Often**
+1. **[Well-Defined Stories & Clear Goals](requirements.md)**
+2. **[Right Tech Stack Selection](tech-stack.md)**
+3. **[Modular Code Design](modular-code.md)**
+4. **[Comprehensive Test Coverage](testing.md)**
+5. **[Deploy Early & Often](deployment.md)**
+6. **[Design & Diagrams](design-and-diagrams.md)**
 
-Plus additional quality practices...
+Plus [additional quality practices...](additional-topics.md)
 
 ---
 
-# 1. Well-Defined Stories & Clear Goals
+# 1. [Well-Defined Stories & Clear Goals](requirements.md)
 
 > *Quality starts with understanding what you're building and why*
 
@@ -57,7 +58,7 @@ Plus additional quality practices...
 
 ---
 
-# 2. Right Tech Stack Selection
+# 2. [Right Tech Stack Selection](tech-stack.md)
 
 > *Choosing appropriate technologies that align with requirements*
 
@@ -76,7 +77,7 @@ Plus additional quality practices...
 
 ---
 
-# 3. Modular Code Design
+# 3. [Modular Code Design](modular-code.md)
 
 > *Building reusable, maintainable components*
 
@@ -95,7 +96,7 @@ Plus additional quality practices...
 
 ---
 
-# 4. Comprehensive Test Coverage
+# 4. [Comprehensive Test Coverage](testing.md)
 
 > *Ensuring reliability through automated testing*
 
@@ -114,7 +115,7 @@ Plus additional quality practices...
 
 ---
 
-# 5. Deploy Early & Often
+# 5. [Deploy Early & Often](deployment.md)
 
 > *Continuous integration and deployment practices*
 
@@ -130,6 +131,25 @@ Plus additional quality practices...
 - **Feature Flags** - Controlled releases
 - **Monitoring** - Production health awareness
 - **Rollback Strategies** - Quick recovery mechanisms
+
+---
+
+# 6. [Design & Diagrams](design-and-diagrams.md)
+
+> *Visualizing Software Architecture*
+
+- Clarify complex systems
+- Improve team communication
+- Document key design decisions
+
+---
+
+## Design & Diagrams - Key Points
+
+- **UML** - Standardized modeling language
+- **C4 Model** - Architectural visualization
+- **Sequence Diagrams** - Interaction flows
+- **Diagrams as Code** - Version-controlled documentation
 
 ---
 

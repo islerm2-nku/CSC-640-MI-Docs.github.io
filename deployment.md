@@ -447,6 +447,7 @@ jobs:
 - Staging environment deployment
 - Environment configuration
 - Basic monitoring
+---
 
 ### **Week 5-6:** Production Pipeline
 - Production deployment automation
@@ -465,32 +466,13 @@ jobs:
 - **MTTR** - Mean time to recovery
 - **Change Failure Rate** - Percentage of failed deployments
 
+---
+
 ### **Target Goals:**
 - Deploy multiple times per day
 - Lead time under 1 hour
 - MTTR under 1 hour
 - Change failure rate under 15%
-
----
-
-# Case Study: E-commerce Platform
-
-## CI/CD Transformation
-
-**Before:**
-- Monthly manual deployments
-- 2-day deployment process
-- High failure rates
-
-**After:**
-- Multiple daily deployments
-- 15-minute automated pipeline
-- 99.9% deployment success rate
-
-**Key Changes:**
-- Automated testing pipeline
-- Blue-green deployment strategy
-- Comprehensive monitoring
 
 ---
 
@@ -517,52 +499,3 @@ jobs:
 3. **Monitor actively** - Know when deployments succeed/fail
 4. **Plan for rollback** - Always have an escape route
 5. **Deploy frequently** - Smaller changes are safer
-
----
-
-# Implementation Checklist
-
-## ✅ CI/CD Setup:
-
-- [ ] Set up automated builds on commits
-- [ ] Configure automated test execution
-- [ ] Create staging deployment pipeline
-- [ ] Implement production deployment
-- [ ] Set up monitoring and alerts
-- [ ] Document rollback procedures
-- [ ] Train team on CI/CD processes
-
----
-
-# Questions & Discussion
-
-## Discussion Points:
-- What deployment challenges have you faced?
-- How often does your team currently deploy?
-- What tools are you considering for CI/CD?
-- How do you handle database migrations?
-
----
-
-# Next Steps
-
-## Apply This Knowledge:
-1. **Assess current deployment process** - Identify pain points
-2. **Choose CI/CD platform** - Based on team needs
-3. **Start with basic automation** - Build and test
-4. **Add deployment automation** - Staging first
-5. **Implement monitoring** - Track deployment success
-6. **Optimize for speed** - Reduce pipeline time
-
----
-
-# Thank You
-
-## Next Topic:
-**Additional Quality Practices**
-*Code reviews, documentation, monitoring, and more*
-
-**Resources:**
-- CI/CD Pipeline Templates
-- Deployment Strategy Guide
-- Monitoring Setup Checklist
