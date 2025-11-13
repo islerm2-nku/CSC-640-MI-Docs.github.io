@@ -66,7 +66,7 @@ class User {
   validateEmail() { /* validation logic */ }
 }
 ```
-
+---
 ### **Good Example:**
 ```javascript
 class User { constructor(name, email) { ... } }
@@ -454,6 +454,11 @@ class EventBus {
   }
 }
 
+```
+
+---
+
+```javascript
 // Usage
 const eventBus = new EventBus();
 
@@ -490,6 +495,11 @@ class UserValidator {
   validateAge(age) {
     return age >= 18 && age <= 120;
   }
+  ```
+
+---
+
+```javascript
   
   validateUser(user) {
     return this.validateEmail(user.email) &&
@@ -523,6 +533,7 @@ describe('UserValidator', () => {
   });
 });
 ```
+---
 
 ### **Integration Testing with Mocks:**
 ```javascript
@@ -565,7 +576,11 @@ class UserRepository {
   async save(user) {
     throw new Error('Must be implemented by subclass');
   }
-  
+  ```
+
+  ---
+
+  ```javascript
   /**
    * Find user by email address
    * @param {string} email - User's email address
@@ -580,11 +595,9 @@ class UserRepository {
 ---
 
 # Package Organization
-
 ## Structuring Modular Code
-
 ### **By Feature (Recommended):**
-```
+```bash
 src/
 ├── user/
 │   ├── User.js
@@ -602,6 +615,7 @@ src/
     └── Validator.js
 ```
 
+---
 ### **By Layer (Traditional):**
 ```
 src/

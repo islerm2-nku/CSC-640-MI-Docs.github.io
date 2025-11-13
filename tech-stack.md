@@ -398,27 +398,6 @@ footer: '© 2024 CSC-640 Software Quality'
 
 ---
 
-# Case Study: Migration Success
-
-## Company: Medium-sized SaaS Platform
-
-**Problem:** PHP monolith becoming hard to maintain
-**Process:** 6-month evaluation of Node.js, Python, and Go
-**Decision:** Node.js microservices
-**Result:** 40% faster development, better scalability
-**Key Factor:** Team already knew JavaScript
-
----
-
-# Questions & Discussion
-
-## Discussion Points:
-- What tech stack decisions have you faced?
-- How do you evaluate new technologies?
-- What migration challenges have you encountered?
-- How do you balance innovation with stability?
-
----
 
 # Next Steps
 
