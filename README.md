@@ -13,10 +13,11 @@ This documentation is structured as a series of **Marp presentations** covering 
 2. **[requirements.md](requirements.md)** - Well-defined stories & clear goals
 3. **[tech-stack.md](tech-stack.md)** - Right technology stack selection
 4. **[modular-code.md](modular-code.md)** - Modular code design
-5. **[design-and-diagrams.md](design-and-diagrams.md)** - Design & Diagrams
-6. **[testing.md](testing.md)** - Comprehensive test coverage
-7. **[deployment.md](deployment.md)** - Deploy early & often
-8. **[additional-topics.md](additional-topics.md)** - Code review, security, monitoring & more
+5. **[api-design.md](api-design.md)** - API Design Best Practices
+6. **[design-and-diagrams.md](design-and-diagrams.md)** - Design & Diagrams
+7. **[testing.md](testing.md)** - Comprehensive test coverage
+8. **[deployment.md](deployment.md)** - Deploy early & often
+9. **[additional-topics.md](additional-topics.md)** - Code review, security, monitoring & more
 
 ## 📋 Files Overview
 
@@ -25,6 +26,7 @@ This documentation is structured as a series of **Marp presentations** covering 
 ├── requirements.md          # Requirements & clear goals
 ├── tech-stack.md            # Technology stack selection
 ├── modular-code.md          # Modular code design
+├── api-design.md            # API Design Best Practices
 ├── design-and-diagrams.md   # Design & Diagrams
 ├── testing.md               # Test coverage strategies
 ├── deployment.md            # Deploy early & often

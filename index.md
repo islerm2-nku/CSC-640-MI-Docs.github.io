@@ -31,9 +31,10 @@ This presentation covers essential principles that lead to maintainable, reliabl
 1. **[Well-Defined Stories & Clear Goals](requirements.md)**
 2. **[Right Tech Stack Selection](tech-stack.md)**
 3. **[Modular Code Design](modular-code.md)**
-4. **[Comprehensive Test Coverage](testing.md)**
-5. **[Deploy Early & Often](deployment.md)**
-6. **[Design & Diagrams](design-and-diagrams.md)**
+4. **[API Design Best Practices](api-design.md)**
+5. **[Comprehensive Test Coverage](testing.md)**
+6. **[Deploy Early & Often](deployment.md)**
+7. **[Design & Diagrams](design-and-diagrams.md)**
 
 Plus [additional quality practices...](additional-topics.md)
 
@@ -150,6 +151,26 @@ Plus [additional quality practices...](additional-topics.md)
 - **C4 Model** - Architectural visualization
 - **Sequence Diagrams** - Interaction flows
 - **Diagrams as Code** - Version-controlled documentation
+
+---
+
+# 4. [API Design Best Practices](api-design.md)
+
+> *Building Clear, Maintainable APIs*
+
+- RESTful design principles
+- Versioning and evolution
+- Clear error handling
+
+---
+
+## API Design - Key Points
+
+- **REST Principles** - Resource-oriented architecture
+- **Versioning** - Manage change without breaking clients
+- **Error Handling** - Clear, actionable error messages
+- **Authentication** - Secure your endpoints
+- **Documentation** - OpenAPI/Swagger specifications
 
 ---
 
