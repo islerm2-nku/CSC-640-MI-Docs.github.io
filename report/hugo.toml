@@ -1,0 +1,49 @@
+baseURL = 'https://islerm2-nku.github.io/CSC-640-MI-Docs.github.io/'
+languageCode = 'en-us'
+title = 'CSC-640 Software Quality Documentation'
+theme = 'PaperMod'
+
+[params]
+  description = "Comprehensive guide to software quality principles and best practices"
+  author = "CSC-640"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+
+[params.homeInfoParams]
+  Title = "Software Quality Documentation"
+  Content = """
+  Welcome to the CSC-640 Software Quality documentation.
+  
+  This comprehensive guide covers essential software quality principles and best practices, 
+  including requirements, architecture, testing, deployment, and more.
+  """
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Core Principles"
+  url = "/principles/"
+  weight = 2
+
+[[menu.main]]
+  name = "GitHub"
+  url = "https://github.com/islerm2-nku/CSC-640-MI-Docs.github.io"
+  weight = 3
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+    lineNumbersInTable = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

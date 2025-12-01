@@ -18,3 +18,8 @@ Thumbs.db
 # Build/dist
 dist/
 build/
+
+# Hugo
+report/public/
+report/resources/
+report/.hugo_build.lock
