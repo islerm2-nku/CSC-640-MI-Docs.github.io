@@ -34,14 +34,42 @@ This documentation is structured as a series of **Marp presentations** covering 
 └── README.md                # This file
 ```
 
+## 🔄 Syncing to Hugo
+
+This repository contains both Marp presentation slides and a Hugo-based documentation site.
+
+**Hugo Documentation Site:** https://islerm2-nku.github.io/CSC-640-MI-Docs.github.io/
+
+### Updating the Hugo Site
+
+After editing any Marp `.md` files, sync them to the Hugo site:
+
+```bash
+./sync-to-hugo.sh
+```
+
+This script:
+- Converts Marp presentations to Hugo-compatible markdown
+- Removes Marp frontmatter and adds Hugo frontmatter
+- Updates all content in `report/content/principles/`
+
+Then commit and push to automatically deploy via GitHub Actions:
+
+```bash
+git add .
+git commit -m "Update documentation"
+git push
+```
+
 ## 🔗 Resources
 
 - **[Marp Official Site](https://marp.app/)** - Documentation and guides
 - **[Marp CLI](https://github.com/marp-team/marp-cli)** - Command-line tool
 - **[VS Code Extension](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)** - Editor integration
+- **[Hugo Documentation](https://gohugo.io/)** - Hugo static site generator
 
 ---
 
 **Course:** CSC-640 Software Quality  
-**Format:** Marp Presentation Slides  
+**Format:** Marp Presentation Slides + Hugo Documentation  
 **Repository:** [CSC-640-MI-Docs.github.io](https://github.com/islerm2-nku/CSC-640-MI-Docs.github.io)
